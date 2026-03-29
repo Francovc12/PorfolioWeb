@@ -2,6 +2,7 @@
 
 :root {
     --bg-color: #1a202c;
+    --bg-color-navbar: #1e2024;
     --text-color: whitesmoke;
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -11,5 +12,6 @@
 
 .light {
     --bg-color: #ffffff;
+    --bg-color-navbar: #88acf5;
     --text-color: #000000;
 }
