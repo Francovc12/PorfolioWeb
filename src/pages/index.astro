@@ -1,5 +1,7 @@
 ---
-
+import '../styles/global.css';
+import Title from '../components/Title.astro';
+import Subtitle from '../components/Subtitle.astro';
 ---
 
 <html lang="en">
@@ -12,6 +14,29 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<Title Text="Bienvenido a mi sitio web" />
+		<Subtitle text="Soy Ignacio Villca Desarrollador web Freelance" />
+		<p>Este es un sitio web de ejemplo creado con Astro.</p>
+		<button id="theme-toggle">Cambiar Tema</button>
 	</body>
 </html>
+
+<script>
+    const button = document.getElementById('theme-toggle');
+    if (button) {
+        button.addEventListener('click', () => {
+            document.documentElement.classList.toggle('light');
+        });
+    }
+</script>
+
+<style>
+	body {
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+</style>

@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+:root {
+    --bg-color: #1a202c;
+    --text-color: whitesmoke;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    height: 100dvh;
+    display: flex;
+}
+
+.light {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}

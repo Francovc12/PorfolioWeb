@@ -1,0 +1,17 @@
+---
+interface Props {
+  text?: string;
+}
+
+const { text = "Subtítulo" } = Astro.props;
+---
+
+<h2 class="text-3xl text-blue-500">
+  <slot>{text}</slot>
+</h2>
+
+<style>
+  h2 {
+    font-weight: 600;
+  }
+</style>
